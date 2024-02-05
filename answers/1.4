@@ -1,0 +1,5 @@
+docker stop flask-app-container
+docker rm flask-app-container
+docker run -d -p 5000:5000 -e CURRENT_ENVIRONMENT=production --name flask-app-container my-python-app
+
+docker run -d --name flask-app-container -p 5000:5000 app 
